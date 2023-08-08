@@ -1,15 +1,18 @@
 import React from 'react'
-import Nav from './Nav.tsx'
-import Logo from './Logo.tsx'
-import CallToAction from './CallToAction.tsx'
+import Nav from './Nav'
+import Logo from './Logo'
+import CallToAction from './CallToAction'
 
 const NavBar = () => {
   return (
-
-    <div>
-        <Logo/>
-        <Nav/>
-        <CallToAction/>
+    <div className='nav_bar'>
+        <div className='logo'>
+          <Logo/>
+        </div>
+        <div className='nav'>
+          <Nav/>
+          <CallToAction/>
+        </div>
     </div>
   )
 }
